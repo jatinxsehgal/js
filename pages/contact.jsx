@@ -41,7 +41,12 @@ const Contact = () => {
         emailjs
           .sendForm('service_gdznw7k', 'template_qgeu89n', form.current, {
             publicKey: 'ihuURRHtQ6axR2qDx',
+
+
+
+            
           })
+          
           .then(
             () => {
               console.log('SUCCESS!');
@@ -53,6 +58,11 @@ const Contact = () => {
               console.log('FAILED...', error.text);
             },
           );
+          
+          const templateParams = {
+            name: 'James',
+            notes: 'Check this out!',
+          };
            // Clear the form
     
         // Display thank you message    
@@ -99,8 +109,8 @@ const Contact = () => {
                     <a className='hover:scale-125 ease-in-out duration-700' href="jatinsehgal466@gmail.com" target='_blank' rel="noreferrer"><HiMail /></a>
                     <a className='hover:scale-125 ease-in-out duration-700' href="https://github.com/jatinxsehgal" target='_blank' rel="noreferrer"><FaGithub /></a>
                     <a className='hover:scale-125 ease-in-out duration-700' href="https://www.linkedin.com/in/jatinsehgal4/" target='_blank' rel="noreferrer"><FaLinkedin /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700 hidden sm:block' href="#" target='_blank' rel="noreferrer"><Fiverr_Icon /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700 text-2xl sm:text-4xl mt-1' href="#" target='_blank' rel="noreferrer"><SiUpwork /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700 hidden sm:block' href="https://www.fiverr.com/jatinsehgal0" target='_blank' rel="noreferrer"><Fiverr_Icon /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700 text-2xl sm:text-4xl mt-1' href="https://www.upwork.com/freelancers/~017ae57af2750484ad" target='_blank' rel="noreferrer"><SiUpwork /></a>
                 </div>
 
                 <form ref={form} onSubmit={sendEmail}>
