@@ -1,136 +1,96 @@
 const portfolio = [
     {
         id: 0,
-        projectName: "JMM Technologies",
-        url: "https://jmm.ltd/",
-        image: "projects/jmm.png",
-        projectDetail: "JMM Technologies is a start-up turned technology company with extensive years of experience delivering digital solutions. As a fast-growing tech firm, we help diverse businesses and organizations. Our expertise in innovative, state-of-the-art digital services accelerates business growth and enhances customer impact.",
+        projectName: "Iifa Institute",
+        url: "https://iifainstitute.in/",
+        image: "projects/1.png",
+        projectDetail: "IIFA - Best Fashion Designing  Institute in haryana. The Core Purpose of Indian Institute of Fashion Art is to provide professional services associated with education and training in the field of Design, Fashion, Textile and Business by International Standards, which are reviewed continuously for improvement to accomplish consistent customer satisfaction.",
         technologiesUsed: [
             {
-                tech: "ReactJS"
+                tech: "Wordpress"
             },
             {
-                tech: ".net"
+                tech: "Php"
             },
             {
-                tech: "Ant Design"
+                tech: "Custom css"
             },
             {
-                tech: "TailwindCSS"
+                tech: "MySql Db"
             },
         ]
     },
     {
         id: 0,
-        projectName: "ALSN",
-        url: "https://elmsafeer.co/",
-        image: "projects/alsn.png",
-        projectDetail: "ASLN drives digital transformation with certified document translation services. In an interconnected world where seamless communication is imperative, they are strategically positioned to cater to the needs of businesses, individuals, and organizations.",
+        projectName: "Design Master School",
+        url: "https://designmasterschool.com/",
+        image: "projects/2.png",
+        projectDetail: "DESIGN MASTER SCHOOL - Explore the most sought-after career options in design, fashion business, and interior design. Our curriculum is meticulously crafted to meet industry demands, providing students with the skills and knowledge needed to thrive in the competitive world of design. Design Master School boasts a rich tradition of international placements and is proudly affiliated with reputable certification bodies, including QRO Certification. Our students benefit from exposure to global design trends, preparing them for success on the international stage.  ",
         technologiesUsed: [
             {
-                tech: "ReactJS"
+                tech: "Wordpress"
             },
             {
-                tech: ".net"
+                tech: "Php"
             },
             {
-                tech: "Ant Design"
+                tech: "Custom css"
             },
             {
-                tech: "TailwindCSS"
+                tech: "MySql Db"
             },
         ]
     },
     {
         id: 0,
-        projectName: "FirmSanad",
-        url: "https://firmsanad.invogen.co/",
-        image: "projects/firmsanad.png",
-        projectDetail: "Invest in Saudi Arabia, Streamline Your Business Setup Process in Saudi Arabia with FirmSanad Simplify the process of obtaining licenses and starting a business in Saudi Arabia with our streamlined platform.",
+        projectName: "Saint Anthony’s School",
+        url: "https://www.saintanthonyschool.in/",
+        image: "projects/3.png",
+        projectDetail: "Saint Anthony’s School is one of the best day boarding schools in Haryana situated in Bahadurgarh. Focussing on holistic development of your child we foster academic, moral, social and physical development of young minds",
         technologiesUsed: [
             {
-                tech: "ReactJS"
+                tech: "Wordpress"
             },
             {
-                tech: ".net"
+                tech: "Php"
             },
             {
-                tech: "Ant Design"
+                tech: "Custom css"
             },
             {
-                tech: "TailwindCSS"
+                tech: "MySql Db"
             },
         ]
     },
-    {
-        id: 0,
-        projectName: "Fateh Al Mustaqbil",
-        url: "https://fatehtour.com/",
-        image: "projects/fateh.png",
-        projectDetail: "Fateh Al Mustaqbil is a one-of-a-kind travel agency designed to cater to the interests of travelers across the globe, founded in 2023 in Riyadh, Saudi Arabia. Their expertise lies in crafting exceptional journeys tailored to each client's unique requirements, whether it be ticketing, hotel bookings, or visa assistance.",
-        technologiesUsed: [
-            {
-                tech: "ReactJS"
-            },
-            {
-                tech: ".net"
-            },
-            {
-                tech: "Ant Design"
-            },
-            {
-                tech: "TailwindCSS"
-            },
-        ]
-    },
-    {
-        id: 0,
-        projectName: "Tojjar",
-        url: "https://tojjar.jmmtest.com/",
-        image: "projects/tojjar.png",
-        projectDetail: "Tojjar is ecommerce website,  where you can open your own store and sell products of different brands!",
-        technologiesUsed: [
-            {
-                tech: "Nextjs with SSR"
-            },
-            {
-                tech: "Laravel"
-            },
-            {
-                tech: "Ant Design"
-            },
-            {
-                tech: "TailwindCSS"
-            },
-        ]
-    },
+    
+    
     {
         id: 1,
-        projectName: "Otawix",
-        url: "https://b2c.otawix.com/",
-        image: "projects/otawix.png",
-        projectDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti aut veritatis, adipisci natus optio dolores cum rem? Aut perferendis fugit, eos rerum totam aspernatur iure alias temporibus ipsa perspiciatis!",
+        projectName: "Ai",
+        url: "https://iosandweb.net/ai/",
+        image: "projects/4.png",
+        projectDetail: "In this website It has a Ai functionalities it will contain Speech to text , Text to speech and Translation in any language functionalities ",
         technologiesUsed: [
             {
-                tech: "NextJS"
+                tech: "React.JS"
             },
             {
                 tech: "NodeJS"
             },
             {
-                tech: "MUI"
+                tech: "Api"
             },
             {
-                tech: "TailwindCSS"
+                tech: "React Bootstrap"
             },
         ]
     },
     {
         id: 2,
-        projectName: "Spatay",
-        url: "https://spatay.com/",
-        image: "projects/spatay.png",
-        projectDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti aut veritatis, adipisci natus optio dolores cum rem? Aut perferendis fugit, eos rerum totam aspernatur iure alias temporibus ipsa perspiciatis!",
+        projectName: "Staking Website",
+        url: "https://iosandweb.net/staking/",
+        image: "projects/5.png",
+        projectDetail: "Pera Wallet is the easiest and safest way to store, buy and swap on the Algorand blockchain. Discover & connect decentralized applications (dApps) on any device. It will allow to stake Buy token to user with perawallet connect",
         technologiesUsed: [
             {
                 tech: "ReactJS"
@@ -139,34 +99,17 @@ const portfolio = [
                 tech: "NodeJS"
             },
             {
-                tech: "Ant Design"
+                tech: "Perawallet"
             },
             {
-                tech: "TailwindCSS"
+                tech: "Algosdk"
+            },
+            {
+                tech: "Firebase"
             },
         ]
     },
-    // {
-    //     id: 2,
-    //     projectName: "Culyte",
-    //     url: "https://culyte.com",
-    //     image: "projects/culyte.png",
-    //     projectDetail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti aut veritatis, adipisci natus optio dolores cum rem? Aut perferendis fugit, eos rerum totam aspernatur iure alias temporibus ipsa perspiciatis!",
-    //     technologiesUsed: [
-    //         {
-    //             tech: "ReactJS"
-    //         },
-    //         {
-    //             tech: "NodeJS"
-    //         },
-    //         {
-    //             tech: "Ant Design"
-    //         },
-    //         {
-    //             tech: "TailwindCSS"
-    //         },
-    //     ]
-    // },
+   
 ]
 export default function handler(req, res) {
     res.status(200).json(portfolio)

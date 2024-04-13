@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef} from 'react';
 import BannerLayout from '../components/Common/BannerLayout';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { SiUpwork } from 'react-icons/si'
@@ -7,9 +7,56 @@ import { BsChatTextFill } from 'react-icons/bs'
 import Fiverr_Icon from '../components/Fiverr_Icon';
 import Footer from '../components/Footer';
 import { Modal } from 'antd';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const form = useRef(null);
+    const [thankYouMessage, setThankYouMessage] = useState('');
     const [isOpen, setIsOpen] = useState(false)
+
+   
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+    //     var data = {
+    //         service_id: 'service_gdznw7k',
+    //         template_id: 'template_qgeu89n',
+    //         user_id: 'ihuURRHtQ6axR2qDx',
+    //         template_params: {
+    //             'username': 'James',
+    //             'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
+    //         }
+    //     };
+    //     $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+    //     type: 'POST',
+    //     data: JSON.stringify(data),
+    //     contentType: 'application/json'
+    // }).done(function() {
+    //     alert('Your mail is sent!');
+    // }).fail(function(error) {
+    //     alert('Oops... ' + JSON.stringify(error));
+    // });
+    
+        emailjs
+          .sendForm('service_gdznw7k', 'template_qgeu89n', form.current, {
+            publicKey: 'ihuURRHtQ6axR2qDx',
+          })
+          .then(
+            () => {
+              console.log('SUCCESS!');
+              setThankYouMessage(
+                'Thank you for sending a message. Your message has been sent!'
+              );
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+          );
+           // Clear the form
+    
+        // Display thank you message    
+      };
 
     return (
         <BannerLayout>
@@ -20,43 +67,43 @@ const Contact = () => {
                         <div className="card_stylings w-full md:w-1/2 p-5 md:p-6 lg:p-8 flex flex-col gap-y-4">
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Country:</span>
-                                <span className='text-LightGray md:text-sm'>Pakistan</span>
+                                <span className='text-LightGray md:text-sm'>INDIA</span>
+                            </div>
+                            
+                            <div className="flex justify-between items-center">
+                                <span className='md:text-base'>State:</span>
+                                <span className='text-LightGray md:text-sm'>HARYANA</span>
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>City:</span>
-                                <span className='text-LightGray md:text-sm'>Peshawar</span>
-                            </div>
-                            <div className="flex justify-between items-center">
-                                <span className='md:text-base'>Company:</span>
-                                <span className='text-LightGray md:text-sm'>CodeWorthy</span>
+                                <span className='text-LightGray md:text-sm'>AMBALA CITY</span>
                             </div>
                         </div>
                         <div className="card_stylings rounded-xl w-full md:w-1/2 p-5 md:p-6 lg:p-8 flex flex-col gap-y-4">
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Email:</span>
-                                <span className='text-LightGray text-sm'>iosamajavaid@gmail.com</span>
+                                <span className='text-LightGray text-sm'>Jatinsehgal466@gmail.com</span>
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Linkedin:</span>
-                                <span className='text-LightGray text-sm'>reachOsama</span>
+                                <span className='text-LightGray text-sm'>Jatinsehgal4</span>
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Phone:</span>
-                                <span className='text-LightGray text-sm'>+92 (315) 9591822</span>
+                                <span className='text-LightGray text-sm'>+91 8221866158</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="h-16 w-full card_stylings text-xl sm:text-3xl flex gap-x-8 sm:gap-x-16 items-center justify-center text-Snow">
-                    <a className='hover:scale-125 ease-in-out duration-700' href="" target='_blank' rel="noreferrer"><HiMail /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700' href="https://github.com/osamajavaid" target='_blank' rel="noreferrer"><FaGithub /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700' href="https://www.linkedin.com/in/iosamajavaid/" target='_blank' rel="noreferrer"><FaLinkedin /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700' href="https://x.com/iosamajavaid" target='_blank' rel="noreferrer"><FaTwitter /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700 hidden sm:block' href="https://www.fiverr.com/codeworthy" target='_blank' rel="noreferrer"><Fiverr_Icon /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700' href="jatinsehgal466@gmail.com" target='_blank' rel="noreferrer"><HiMail /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700' href="https://github.com/jatinxsehgal" target='_blank' rel="noreferrer"><FaGithub /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700' href="https://www.linkedin.com/in/jatinsehgal4/" target='_blank' rel="noreferrer"><FaLinkedin /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700 hidden sm:block' href="#" target='_blank' rel="noreferrer"><Fiverr_Icon /></a>
                     <a className='hover:scale-125 ease-in-out duration-700 text-2xl sm:text-4xl mt-1' href="#" target='_blank' rel="noreferrer"><SiUpwork /></a>
                 </div>
 
-
+                <form ref={form} onSubmit={sendEmail}>
                 <div className="my-12 w-full h-auto text-Snow">
                     <h1 className='text-lg font-bold'>Get In Touch</h1>
                     <div className="mt-4 py-8 px-8 bg-EveningBlack rounded-xl text-sm">
@@ -89,12 +136,14 @@ const Contact = () => {
                             </div>
 
                             <div className="my-4">
-                                <button onClick={() => setIsOpen(true)} className="button"> SEND MESSAGE </button>
+                                <button onClick={sendEmail} className="button"> SEND MESSAGE </button>
                             </div>
                         </div>
                     </div>
                 </div>
+                </form> 
             </div>
+            
             {/* success modal */}
             <Modal
                 className='card_stylings backdrop-blur-3xl drop-shadow-2xl'

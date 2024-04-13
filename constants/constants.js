@@ -1,67 +1,68 @@
-export const NAME = 'Muhammad Osama Javaid';
+export const NAME = 'Jatin Sehgal';
 
-export const DESIGNATION = `MERN Stack Developer | Open Source Contributor | Tech Blogger`;
+export const DESIGNATION = `Full Stack Developer  `;
 
 export const DETAILS = {
-  Residence: 'Pakistan',
-  City: 'Peshawar',
-  Age: '23',
+  Residence: 'Haryana',
+  City: 'Ambala city',
+  Age: '21',
 };
 
 export const SKILLS = [
   {
-    title: 'MERN Stack Developer',
+    title: 'Frontend Developer',
+    level: '95%',
+
+  },
+  {
+    title: 'Full Stack Developer',
     level: '75%',
   },
   {
     title: 'React Developer',
-    level: '91%',
+    level: '70%',
   },
-  // {
-  //   title: 'Desktop Application Developer',
-  //   level: '75%',
-  // },
+
   {
     title: 'Backend Developer',
-    level: '54%',
+    level: '65%',
   },
-  {
-    title: 'Technical Blogger',
-    level: '83%',
-  },
+
 ];
 
 export const TECH_STACK = [
+  'Html', 
+  'CSS', 
+  'Bootstrap',
+  'JavaScript', 
   'ReactJS',
-  'JavaScript',
+  'React Bootstrap',
+
   'NextJS',
   'TypeScript',
   'NodeJS',
-  'Redux',
-  'Zustand',
-  'CSS',
-  'SCSS',
-  'TailwindCSS',
+  'PSD to Html',
   'Ant Design',
   'Material UI',
   'Next UI',
   'REST API',
-  'MongoDB',
+  'Php',
   'MySQL',
+  'Firebase',
+  'GraphQL',
   'Git',
   'GitHub',
-  'Jira',
-  'Figma',
-  'Adobe XD',
+  'Wordpress',
+  'Adobe Ps',
 ];
 
 export const CONTACTS = {
-  EMAIL: 'iosamajavaid@gmail.com',
-  PHONE: '+923159591822',
+  EMAIL: 'Jatinsehgal466@gmail.com',
+  PHONE: '+91 8221866158',
 };
 export const SOCIAL_LINKS = {
-  GITHUB: 'https://github.com/osamajavaid',
-  LINKEDIN: 'https://www.linkedin.com/in/iosamajavaid/',
-  TWITTER: 'https://twitter.com/iosamajavaid',
-  FACEBOOK: 'https://www.facebook.com/iosamajavaid',
+  GITHUB: 'https://github.com/jatinxsehgal',
+  LINKEDIN: 'https://www.linkedin.com/in/jatinsehgal4/',
+  TWITTER: '',
+  FACEBOOK: '',
 };

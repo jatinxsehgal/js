@@ -3,24 +3,29 @@ const background = [
         eduCards: [
             {
                 id: 0,
-                title: 'UET Peshawar',
-                degree: 'BS, Computer System Engineering',
-                detail: "Bachelor's Degree in Computer System Engineering from UET Peshawar.",
-                year: '2018-2022'
+                title: 'kurukshetra university',
+                degree: 'BA , Hons',
+                detail: "Bachelor of Arts With Economics and computer.",
+                year: '2020 - 2023'
             },
             {
                 id: 1,
-                title: 'Peshawar Model Degree College',
-                degree: 'HSSC, Pre Engineering',
-                detail: "Completed FSC part 1 and part 2 in Pre-Engineering from Peshawar Model Degree College.",
-                year: '2015-2017'
+                title: 'Hartron Skill Center',
+                degree: 'DWT',
+                detail: "DWT - Diploma in Web Technology",
+                year: '2021-20222'
             },
             {
                 id: 2,
+                title: 'S.A. Jain Sr Sec School',
+                degree: '+12',
+                year: '2020'
+            },
+            {
+                id: 3,
                 title: 'Falcon Academy',
-                degree: 'SSC, Science Subjects',
-                detail: "Completed SSC part 1 and part 2 in Science subjects from Falcon Academy Seni Gumbat Kohat",
-                year: '2013-2015'
+                degree: 'S.A. Jain Sr Sec School',
+                year: '2018'
             },
         ]
     },
@@ -28,30 +33,25 @@ const background = [
         expCards: [
             {
                 id: 1,
-                title: 'JMM Technologies',
-                role: 'Frontend Developer',
-                url: 'https://jmm.ltd/',
-                desc: 'As a frontend developer, I use React, Next & JavaScript to build user interfaces for web applications.',
-                year: '02/2023 - Present',
-                location: 'Peshawar, Pakistan'
+                title: 'IOS AND WEB TECHNOLOGY',
+                role: 'Software Developer',
+                desc: 'As a Software developer, I use React, Next & JavaScript and MySql to build user interfaces for web applications.',
+                year: '10/2023 - Present',
+                location: 'Chandigarh'
             },
             {
                 id: 2,
-                title: 'HauzaTech',
-                role: 'Internee',
-                url: 'no website',
-                desc: 'As an Internee, I learned how to use React & JavaScript to build interactive websites.',
-                year: '02/2023 - Present',
-                location: 'Peshawar, Pakistan'
+                title: 'ALPHA SAKER TECHNOLOGIES',
+                role: 'Wordpress Developer',
+                desc: 'As an Wordpress Developer, I have created interactive websites.',
+                location: 'Chandigarh'
             },
             {
                 id: 3,
-                title: 'Encoder Bytes',
-                role: 'PHP Developer',
-                url: 'https://www.encoderbytes.com/',
-                desc: "I work there as a PHP developer, there I learned how to do CRUD'S operations in PHP, also I worked on Firebase",
-                year: '09/2020 - 02/2021',
-                location: 'Peshawar, Pakistan'
+                title: 'SHAMI INNOVATIONS AND TECNOLOGIES.',
+                role: 'Wordpress & PHP Developer trannie ',
+                desc: "I work there as a Wordpress & PHP developer, there I learned how to create websites With Wordpress and do CRUD'S operations in PHP, also I worked on Firebase",
+                location: 'Noida'
             },
 
         ]
