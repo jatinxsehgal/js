@@ -13,62 +13,39 @@ const Contact = () => {
     const form = useRef(null);
     const [thankYouMessage, setThankYouMessage] = useState('');
     const [isOpen, setIsOpen] = useState(false)
-
-   
-
+    
     const sendEmail = (e) => {
         e.preventDefault();
-
-    //     var data = {
-    //         service_id: 'service_gdznw7k',
-    //         template_id: 'template_qgeu89n',
-    //         user_id: 'ihuURRHtQ6axR2qDx',
-    //         template_params: {
-    //             'username': 'James',
-    //             'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
-    //         }
-    //     };
-    //     $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-    //     type: 'POST',
-    //     data: JSON.stringify(data),
-    //     contentType: 'application/json'
-    // }).done(function() {
-    //     alert('Your mail is sent!');
-    // }).fail(function(error) {
-    //     alert('Oops... ' + JSON.stringify(error));
-    // });
-    
-        emailjs
-          .sendForm('service_gdznw7k', 'template_qgeu89n', form.current, {
-            publicKey: 'ihuURRHtQ6axR2qDx',
-
-
-
-            
-          })
-          
-          .then(
-            () => {
-              console.log('SUCCESS!');
-              setThankYouMessage(
-                'Thank you for sending a message. Your message has been sent!'
+        if (
+            process.env.EMAILJS_SERVICE_ID &&
+            process.env.EMAILJS_TEMPLATE_ID &&
+            process.env.EMAILJS_USER_ID &&
+            form.current
+          ) {
+            emailjs
+              .sendForm(
+                process.env.EMAILJS_SERVICE_ID,
+                process.env.EMAILJS_TEMPLATE_ID,
+                form.current,
+                process.env.EMAILJS_USER_ID
+              )
+              .then(
+                (result) => {
+                  alert(result.text);
+                },
+                (error) => {
+                  alert(error.text);
+                }
               );
-            },
-            (error) => {
-              console.log('FAILED...', error.text);
-            },
-          );
-          
-          const templateParams = {
-            name: 'James',
-            notes: 'Check this out!',
-          };
-           // Clear the form
-    
-        // Display thank you message    
+              form.current.reset();
+
+    // Display thank you message
+    setThankYouMessage('Thank you for sending message your message has been sent.! ');
+          }
+       
       };
 
-    return (
+    return  (
         <BannerLayout>
             <div className=" px-4 py-2">
                 <div className="my-6 text-Snow flex flex-col gap-y-5">
@@ -106,24 +83,26 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="h-16 w-full card_stylings text-xl sm:text-3xl flex gap-x-8 sm:gap-x-16 items-center justify-center text-Snow">
-                    <a className='hover:scale-125 ease-in-out duration-700' href="jatinsehgal466@gmail.com" target='_blank' rel="noreferrer"><HiMail /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700' href="mailto:jatinsehgal466@gmail.com" target='_blank' rel="noreferrer"><HiMail /></a>
                     <a className='hover:scale-125 ease-in-out duration-700' href="https://github.com/jatinxsehgal" target='_blank' rel="noreferrer"><FaGithub /></a>
                     <a className='hover:scale-125 ease-in-out duration-700' href="https://www.linkedin.com/in/jatinsehgal4/" target='_blank' rel="noreferrer"><FaLinkedin /></a>
                     <a className='hover:scale-125 ease-in-out duration-700 hidden sm:block' href="https://www.fiverr.com/jatinsehgal0" target='_blank' rel="noreferrer"><Fiverr_Icon /></a>
                     <a className='hover:scale-125 ease-in-out duration-700 text-2xl sm:text-4xl mt-1' href="https://www.upwork.com/freelancers/~017ae57af2750484ad" target='_blank' rel="noreferrer"><SiUpwork /></a>
                 </div>
-
-                <form ref={form} onSubmit={sendEmail}>
+{/* ////////////////////////////     Form    ////////////////////////////////// */}
                 <div className="my-12 w-full h-auto text-Snow">
                     <h1 className='text-lg font-bold'>Get In Touch</h1>
                     <div className="mt-4 py-8 px-8 bg-EveningBlack rounded-xl text-sm">
                         <div>
+                        <form ref={form} onSubmit={sendEmail}>
+
                             <div className="flex flex-col w-full">
                                 <div className="userIcon relative mb-6">
                                     <div id="icon" className="absolute inset-y-0 left-0 flex items-center pl-3 text-xl pointer-events-none">
                                         <HiUser />
                                     </div>
-                                    <input type="text" className="input_stylings" placeholder="Name" />
+                                    <input type="text" id='name' name='user_name' 
+                                    className="input_stylings" placeholder="Name" />
                                 </div>
                             </div>
 
@@ -132,7 +111,7 @@ const Contact = () => {
                                     <div id="icon" className="absolute inset-y-0 left-0 flex items-center text-xl pl-3 pointer-events-none">
                                         <HiMail />
                                     </div>
-                                    <input type="text" className="input_stylings" placeholder="Email" />
+                                    <input type="text" id='email' name='user_email'   className="input_stylings" placeholder="Email" />
                                 </div>
                             </div>
 
@@ -141,17 +120,17 @@ const Contact = () => {
                                     <div id="icon" className="absolute top-3 left-0 flex items-center text-lg pl-3 pointer-events-none">
                                         <BsChatTextFill />
                                     </div>
-                                    <textarea rows={6} cols={50} className="input_stylings" placeholder="Message" />
+                                    <textarea rows={6} cols={50} id="message" name="message" className="input_stylings" placeholder="Message" />
                                 </div>
                             </div>
 
                             <div className="my-4">
                                 <button onClick={sendEmail} className="button"> SEND MESSAGE </button>
-                            </div>
+                            </div></form> 
                         </div>
                     </div>
                 </div>
-                </form> 
+                
             </div>
             
             {/* success modal */}
@@ -167,7 +146,7 @@ const Contact = () => {
             >
                 <div className='flex flex-col items-center justify-center'>
                     <h1 className='text-Green font-bold text-2xl'>In Progress</h1>
-                    <a className='underline text-Snow' target='_blank' href='https://github.com/osamajavaid/portfolio'>Be the one to integrate this!</a>
+                    <a className='underline text-Snow' target='_blank'  >Be the one to integrate this!</a>
                 </div>
             </Modal>
             <Footer />
