@@ -62,53 +62,76 @@ const portfolio = [
             },
         ]
     },
-    
-    
     {
-        id: 1,
-        projectName: "Ai",
-        url: "https://iosandweb.net/ai/",
-        image: "projects/4.png",
-        projectDetail: "In this website It has a Ai functionalities it will contain Speech to text , Text to speech and Translation in any language functionalities ",
+        id: 0,
+        projectName: "I have worked on many projects, but due to company policies, I cannot include them in my personal portfolio.",
+        image: "projects/6.jpg",
         technologiesUsed: [
             {
-                tech: "React.JS"
+                tech: "React js"
             },
             {
-                tech: "NodeJS"
+                tech: "Next js"
             },
             {
-                tech: "Api"
+                tech: "Custom css"
             },
             {
-                tech: "React Bootstrap"
-            },
-        ]
-    },
-    {
-        id: 2,
-        projectName: "Staking Website",
-        url: "https://iosandweb.net/staking/",
-        image: "projects/5.png",
-        projectDetail: "Pera Wallet is the easiest and safest way to store, buy and swap on the Algorand blockchain. Discover & connect decentralized applications (dApps) on any device. It will allow to stake Buy token to user with perawallet connect",
-        technologiesUsed: [
-            {
-                tech: "ReactJS"
-            },
-            {
-                tech: "NodeJS"
-            },
-            {
-                tech: "Perawallet"
-            },
-            {
-                tech: "Algosdk"
+                tech: "MySql Db"
+            }, {
+                tech: "Typescript"
             },
             {
                 tech: "Firebase"
             },
         ]
     },
+    
+    // {
+    //     id: 1,
+    //     projectName: "Ai",
+    //     url: "https://iosandweb.net/ai/",
+    //     image: "projects/4.png",
+    //     projectDetail: "In this website It has a Ai functionalities it will contain Speech to text , Text to speech and Translation in any language functionalities ",
+    //     technologiesUsed: [
+    //         {
+    //             tech: "React.JS"
+    //         },
+    //         {
+    //             tech: "NodeJS"
+    //         },
+    //         {
+    //             tech: "Api"
+    //         },
+    //         {
+    //             tech: "React Bootstrap"
+    //         },
+    //     ]
+    // },
+    // {
+    //     id: 2,
+    //     projectName: "Staking Website",
+    //     url: "https://iosandweb.net/staking/",
+    //     image: "projects/5.png",
+    //     projectDetail: "Pera Wallet is the easiest and safest way to store, buy and swap on the Algorand blockchain. Discover & connect decentralized applications (dApps) on any device. It will allow to stake Buy token to user with perawallet connect",
+    //     technologiesUsed: [
+    //         {
+    //             tech: "ReactJS"
+    //         },
+    //         {
+    //             tech: "NodeJS"
+    //         },
+    //         {
+    //             tech: "Perawallet"
+    //         },
+    //         {
+    //             tech: "Algosdk"
+    //         },
+    //         {
+    //             tech: "Firebase"
+    //         },
+    //     ]
+    // },
    
 ]
 export default function handler(req, res) {

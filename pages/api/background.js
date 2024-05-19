@@ -36,7 +36,6 @@ const background = [
                 title: 'IOS AND WEB TECHNOLOGY',
                 role: 'Software Developer',
                 desc: 'As a Software developer, I use React, Next & JavaScript and MySql to build user interfaces for web applications.',
-                year: '10/2023 - Present',
                 location: 'Chandigarh'
             },
             {
