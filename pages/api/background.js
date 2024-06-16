@@ -3,8 +3,8 @@ const background = [
         eduCards: [
             {
                 id: 0,
-                title: 'kurukshetra university',
-                degree: 'BA , Hons',
+                title: 'Kurukshetra University',
+                degree: 'B.A Hons',
                 detail: "Bachelor of Arts With Economics and computer.",
                 year: '2020 - 2023'
             },
@@ -23,14 +23,21 @@ const background = [
             },
             {
                 id: 3,
-                title: 'Falcon Academy',
-                degree: 'S.A. Jain Sr Sec School',
+                title: 'S.A. Jain Sr Sec School ',
+                degree: '10th',
                 year: '2018'
             },
         ]
     },
     {
         expCards: [
+            {
+                id: 1,
+                title: 'Imark Infotech Pvt Ltd.',
+                role: 'Web Developer',
+                desc: 'As a Web developer, I use Html ,Css ,Javascript,React,Next Js and Wordpress, Webflow Shopify, Php & MySql to build user interfaces for web applications.',
+                location: 'Chandigarh'
+            },
             {
                 id: 1,
                 title: 'IOS AND WEB TECHNOLOGY',
@@ -42,7 +49,7 @@ const background = [
                 id: 2,
                 title: 'ALPHA SAKER TECHNOLOGIES',
                 role: 'Wordpress Developer',
-                desc: 'As an Wordpress Developer, I have created interactive websites.',
+                desc: 'As an Wordpress Developer, I have created interactive websites in Wordpress with the help of many builders like Elementor, Divi,     Wpbakery , Gutenburg etc.',
                 location: 'Chandigarh'
             },
             {
