@@ -256,7 +256,6 @@ const portfolio = [
       
         projectName: "Landing Pages",
         image: "projects/Rings.jpeg",
-        url:"https://github.com/jatinxsehgal/js/blob/ssehgal/public/projects/Rings.jpeg",
         technologiesUsed: [
             {
                 tech: "ReactJS"
