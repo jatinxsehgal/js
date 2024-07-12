@@ -31,6 +31,8 @@ const Portfolio = () => {
 
 
             </div >
+         
+            
             <Footer />
         </BannerLayout >
     );

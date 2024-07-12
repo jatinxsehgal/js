@@ -19,7 +19,7 @@ const Footer = () => {
                     <div className="mr-1 text-base">
                         <MdMail />
                     </div>
-                    <div>Jatinsehgal466@gmail.com</div>
+                    <div> <a href='mailto:Jatinsehgal466@gmail.com' target="_blank" rel="noreferrer"> <span className='font-bold'>Jatinsehgal466@gmail.com</span></a></div>
                 </div>
             </div>
         </div>

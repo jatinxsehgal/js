@@ -132,6 +132,147 @@ const portfolio = [
             },
         ]
     },
+    {
+      
+        projectName: "Landing Pages",
+        image: "projects/Earth&elle.png",
+        technologiesUsed: [
+            {
+                tech: "ReactJS"
+            },
+            {
+                tech: "Html"
+            },
+            {
+                tech: "Css"
+            },
+            {
+                tech: "Sass"
+            },
+            
+        ]
+    },
+    {
+      
+        projectName: "Landing Pages",
+        image: "projects/Heety.jpeg",
+        technologiesUsed: [
+            {
+                tech: "ReactJS"
+            },
+            {
+                tech: "Html"
+            },
+            {
+                tech: "Css"
+            },
+            {
+                tech: "Sass"
+            },
+            
+        ]
+    },
+    {
+      
+        projectName: "Landing Pages",
+        image: "projects/Markiting.jpeg",
+        technologiesUsed: [
+            {
+                tech: "ReactJS"
+            },
+            {
+                tech: "Html"
+            },
+            {
+                tech: "Css"
+            },
+            {
+                tech: "Sass"
+            },
+            
+        ]
+    },
+    {
+      
+        projectName: "Landing Pages",
+        image: "projects/Product.jpeg",
+        technologiesUsed: [
+            {
+                tech: "ReactJS"
+            },
+            {
+                tech: "Html"
+            },
+            {
+                tech: "Css"
+            },
+            {
+                tech: "Sass"
+            },
+            
+        ]
+    },
+    {
+      
+        projectName: "Landing Pages",
+        image: "projects/Shop.jpeg",
+        technologiesUsed: [
+            {
+                tech: "ReactJS"
+            },
+            {
+                tech: "Html"
+            },
+            {
+                tech: "Css"
+            },
+            {
+                tech: "Sass"
+            },
+            
+        ]
+    },
+    {
+      
+        projectName: "Landing Pages",
+        image: "projects/sacred.jpeg",
+        technologiesUsed: [
+            {
+                tech: "ReactJS"
+            },
+            {
+                tech: "Html"
+            },
+            {
+                tech: "Css"
+            },
+            {
+                tech: "Sass"
+            },
+            
+        ]
+    },
+    {
+      
+        projectName: "Landing Pages",
+        image: "projects/Rings.jpeg",
+        url:"https://github.com/jatinxsehgal/js/blob/ssehgal/public/projects/Rings.jpeg",
+        technologiesUsed: [
+            {
+                tech: "ReactJS"
+            },
+            {
+                tech: "Html"
+            },
+            {
+                tech: "Css"
+            },
+            {
+                tech: "Sass"
+            },
+            
+        ]
+    },
    
 ]
 export default function handler(req, res) {
