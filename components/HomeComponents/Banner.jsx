@@ -14,7 +14,7 @@ const Banner = () => {
                             </div>
                             <div className="">
                                 <div className=" py-4 font-cascadia-normal text-Snow pb-4 text-xs h-20 lg:h-auto">
-                                    <span>{"<"}<span className="text-Green sm:text-base xl:text-lg font-bold">Jatin</span>
+                                    <span className='n-f' >{"<"}<span className="text-Green sm:text-base xl:text-lg font-bold n-f">Jatin</span>
                                         {">"} <span className="text-Snow sm:text-xl xl:text-2xl font-bold"> I am a  <span className="inline-block">
                                             <Typewriter
                                                 options={{
@@ -31,7 +31,7 @@ const Banner = () => {
                                                 }}
                                             />
                                         </span>
-                                        </span> {"</"}<span className="text-Green sm:text-base xl:text-lg font-bold">Sehgal</span>{">"} </span>
+                                        </span> {"</"}<span className="text-Green sm:text-base xl:text-lg font-bold n-f">Sehgal</span>{">"} </span>
                                 </div>
                             </div>
                             <Link to='intro' spy={true} smooth={true} duration={500} offset={-50} className="button">Explore</Link>

@@ -30,6 +30,10 @@ body {
   background: white;
 
 }
+.n-f {
+  font-family: 'Poppins';
+  letter-spacing: 1px;
+}
 @layer utilities {
   @layer components {
     .transition {
