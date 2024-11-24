@@ -9,8 +9,27 @@ body {
     /* transition: width 5s ease-in .2s; */
     overflow: hidden;
     height: 100vh;
-}
+    font-family: poppins !important;
 
+}
+.button:hover {
+  background: white;
+  color: black;
+
+}
+.set {
+  transition: .2s all ease-in ;
+  background: #1fdf64;
+  color: black;
+  font-family: 'Poppins';
+  letter-spacing: 1px;
+  cursor: pointer;
+
+}
+.set:hover {
+  background: white;
+
+}
 @layer utilities {
   @layer components {
     .transition {
@@ -20,15 +39,16 @@ body {
       @apply bg-EveningBlack/95 rounded-xl hover:bg-gradient-to-br hover:from-Green/10 hover:to-indigo-600/5;
     }
     .button {
-      @apply bg-Green hover:bg-Green/60 transition rounded-xl text-MidNightBlack text-base font-medium  px-8 py-2;
+      @apply bg-Green hover:bg-Green/60  rounded-xl text-MidNightBlack text-base font-medium  px-8 py-2;
+
     }
     .input_stylings {
       @apply bg-DeepNightBlack text-SilverGray text-sm rounded-lg outline-none focus:ring-1 focus:ring-Green block w-full pl-10 p-2.5;
     }
 
     @font-face {
-      font-family: 'cascadia-normal';
-      src: url(/public/fonts/Cascadia.ttf);
+      font-family: 'poppins' !important;
+      /* src: url(/public/fonts/Cascadia.ttf); */
     }
     @font-face {
       font-family: 'circular-light';
@@ -134,4 +154,13 @@ body {
 }
 img.w-20.h-20.rounded-full {
   object-fit: cover;
+}
+.jj {
+  font-size: 14px !important;
+}
+.button {
+  font-family: poppins;
+  transition: .2s all ease-in !important;
+  cursor: pointer;
+
 }

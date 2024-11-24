@@ -4,7 +4,7 @@ import { getObjectKeys } from '../../../utils/utils';
 const Location = () => {
   const keys = getObjectKeys(DETAILS);
   return (
-    <div className='flex flex-col space-y-1 pt-6'>
+    <div className='flex flex-col space-y-2 pt-6'>
       {keys.map((key, index) => {
         return (
           <div key={index} className='flex items-center justify-between'>

@@ -69,15 +69,15 @@ const Contact = () => {
                         <div className="card_stylings rounded-xl w-full md:w-1/2 p-5 md:p-6 lg:p-8 flex flex-col gap-y-4">
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Email:</span>
-                                <span className='text-LightGray text-sm'>Jatinsehgal466@gmail.com</span>
+                                <span className='text-LightGray text-sm'><a href='mailto:Jatinsehgal466@gmail.com'>Jatinsehgal466@gmail.com</a></span>
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Linkedin:</span>
-                                <span className='text-LightGray text-sm'>Jatinsehgal4</span>
+                                <span className='text-LightGray text-sm'><a href='https://www.linkedin.com/in/jatinsehgal4/'>Jatinsehgal4</a></span>
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Phone:</span>
-                                <span className='text-LightGray text-sm'>+91 8221866158</span>
+                                <span className='text-LightGray text-sm'><a href='tel:+918221866158'>+91 8221866158</a></span>
                             </div>
                         </div>
                     </div>

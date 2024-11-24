@@ -34,10 +34,10 @@ export const TECH_STACK = [
   'Html', 
   'CSS', 
   'Bootstrap',
+  'Tailwind CSS',
   'JavaScript', 
   'ReactJS',
   'React Bootstrap',
-
   'NextJS',
   'TypeScript',
   'NodeJS',
@@ -49,11 +49,15 @@ export const TECH_STACK = [
   'Php',
   'MySQL',
   'Firebase',
-  'GraphQL',
   'Git',
+  'GraphQL',
   'GitHub',
   'Wordpress',
   'Adobe Ps',
+  'Wix',
+  'Webflow',
+  'Shopify',
+  
 ];
 
 export const CONTACTS = {
