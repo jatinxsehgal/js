@@ -34,7 +34,7 @@ const Banner = () => {
                                         </span> {"</"}<span className="text-Green sm:text-base xl:text-lg font-bold n-f">Sehgal</span>{">"} </span>
                                 </div>
                             </div>
-                            <Link to='intro' spy={true} smooth={true} duration={500} offset={-50} className="button">Explore</Link>
+                            <a to='intro' spy={true} smooth={true} duration={500} offset={-50} className="button" href='tel:918221866158'>Contact Me </a>
                         </div>
                         <div className="w-48 h-52 relative hidden md:block">
                             <img className='absolute top-8 w-full h-full' src="images/emoji.png" alt="emoji" />
