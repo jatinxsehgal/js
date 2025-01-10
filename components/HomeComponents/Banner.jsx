@@ -2,8 +2,10 @@ import Typewriter from 'typewriter-effect';
 import BannerLayout from '../Common/BannerLayout';
 import { Link } from 'react-scroll';
 
+
 const Banner = () => {
     return (
+        <>
         <BannerLayout>
             <div className="absolute inset-0 z-20 flex flex-col items-center py-6 justify-center w-full h-full bg-gradient-to-t from-MidNightBlack">
                 <div className="bg-LightGray/10 w-[95%] h-[90%] px-4 py-2 rounded-xl overflow-hidden flex md:block">
@@ -68,6 +70,7 @@ const Banner = () => {
                 </div>
             </div>
         </BannerLayout>
+        </>
     )
 }
 
