@@ -168,3 +168,9 @@ img.w-20.h-20.rounded-full {
   cursor: pointer;
 
 }
+
+@media (max-width:500px) {
+  .px-2.md\:px-8.py-4.text-lg.font-bold.text-Snow {
+    padding-left: 1em;
+}
+}
