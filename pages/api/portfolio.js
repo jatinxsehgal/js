@@ -1,6 +1,25 @@
 const portfolio = [
     {
-        id: 0,
+    
+        projectName: "Sloc",
+        url: "https://sloc-server.vercel.app/",
+        image: "projects/sloc.png",
+        projectDetail: "SLOC is all about turning property searches into seamless, rewarding experiences. Whether you seek a luxury residence, a strategic investment, or commercial real estate, we present the premier properties from India's leading developers such as Godrej, DLF, and others. ",
+        technologiesUsed: [
+            {
+                tech: "Next js"
+            },
+            {
+                tech: "Php,Laravel"
+            },
+            {
+                tech: "Api's"
+            },
+           
+        ]
+    },
+    {
+      
         projectName: "Iifa Institute",
         url: "https://iifainstitute.in/",
         image: "projects/1.png",
@@ -21,7 +40,7 @@ const portfolio = [
         ]
     },
     {
-        id: 0,
+        
         projectName: "Design Master School",
         url: "https://designmasterschool.com/",
         image: "projects/2.png",
@@ -42,7 +61,7 @@ const portfolio = [
         ]
     },
     {
-        id: 0,
+
         projectName: "Saint Anthony’s School",
         url: "https://www.saintanthonyschool.in/",
         image: "projects/3.png",
@@ -88,7 +107,7 @@ const portfolio = [
     // },
     
     {
-        id: 1,
+       
         projectName: "Ai",
         url: "https://iosandweb.net/ai/",
         image: "projects/4.png",
@@ -109,7 +128,7 @@ const portfolio = [
         ]
     },
     {
-        id: 2,
+      
         projectName: "Staking Website",
         url: "https://iosandweb.net/staking/",
         image: "projects/5.png",

@@ -11,16 +11,16 @@ export const DETAILS = {
 export const SKILLS = [
   {
     title: 'Frontend Developer',
-    level: '95%',
+    level: '98%',
 
   },
   {
     title: 'Full Stack Developer',
-    level: '75%',
+    level: '85%',
   },
   {
-    title: 'React Developer',
-    level: '70%',
+    title: 'React , Next js Developer',
+    level: '80%',
   },
 
   {
