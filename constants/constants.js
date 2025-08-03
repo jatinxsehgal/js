@@ -5,7 +5,7 @@ export const DESIGNATION = `Full Stack Developer  `;
 export const DETAILS = {
   Residence: 'Haryana',
   City: 'Ambala city',
-  Age: '21',
+  Age: '22',
 };
 
 export const SKILLS = [
