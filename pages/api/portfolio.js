@@ -1,8 +1,70 @@
 const portfolio = [
     {
     
+        projectName: "Eydit",
+        url: "https://eydit.com/",
+        image: "projects/Eydt.png",
+        projectDetail: "EYDIT is not a video editing agency, it’s an EXPERIENCE. A team of passionate creators, strategists, and storytellers dedicated to transforming your vision into captivating visual narratives that leave a lasting impact.",
+        technologiesUsed: [
+            {
+                tech: "Next js"
+            },
+            {
+                tech: "Motion  graphics"
+            },
+             {
+                tech: "Design"
+            },
+            {
+                tech: "Smooth animations"
+            },
+           
+        ]
+    },
+    {
+    
+        projectName: "Theschon",
+        url: "https://theschon.com/",
+        image: "projects/schon.png",
+        projectDetail: "The Schon presents itself as “Smart living starts with Schon”, emphasising automatic aluminium doors & windows as part of a modern, smart lifestyle",
+        technologiesUsed: [
+            {
+                tech: "Next js"
+            },
+            {
+                tech: "Php,Laravel"
+            },
+            {
+                tech: "Api's"
+            },
+           
+        ]
+    },
+    {
+      
+        projectName: "Iifathreads",
+        url: "https://iifathreads.com/",
+        image: "projects/ift.png",
+        projectDetail: "IFA Threads is the official platform of the Indian Institute of Fashion Art (IIFA)—created to showcase creativity, skill, and entrepreneurial spirit of our students. Every product featured here is designed and handcrafted by learners pursuing Diploma programs in Fashion Designing, Textile Designing, and Boutique Management. You’re not just buying a garment—You’re uplifting dreams, honoring passion, and wearing purpose.",
+        technologiesUsed: [
+            {
+                tech: "Wordpress"
+            },
+            {
+                tech: "Php"
+            },
+            {
+                tech: "Custom css"
+            },
+            {
+                tech: "MySql Db"
+            },
+        ]
+    },
+    {
+    
         projectName: "Sloc",
-        url: "https://sloc-server.vercel.app/",
+        url: "https://sloc.in",
         image: "projects/sloc.png",
         projectDetail: "SLOC is all about turning property searches into seamless, rewarding experiences. Whether you seek a luxury residence, a strategic investment, or commercial real estate, we present the premier properties from India's leading developers such as Godrej, DLF, and others. ",
         technologiesUsed: [
