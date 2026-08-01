@@ -1,4 +1,88 @@
 const portfolio = [
+         {
+    
+        projectName: "RepoPilot Ai",
+        url: "https://repopilot.ai/",
+        image: "projects/repo.png",
+        projectDetail: "Built a modern AI-powered review management platform that enables businesses to manage customer reviews, generate AI-assisted responses, analyze sentiment, and automate reputation management from a single dashboard. Designed a fast, responsive, and user-friendly experience for businesses of all sizes",
+        technologiesUsed: [
+            {
+                tech: "Node js"
+            },
+            {
+                tech: "Express js"
+            },
+             {
+                tech: "Design"
+            },
+            {
+                tech: "Smooth animations"
+            },
+             {
+                tech: "API's"
+            },
+            {
+                tech: "Goggle Auth"
+            },
+          
+
+            
+           
+        ]
+    },
+        {
+    
+        projectName: "On Time Government Services",
+        url: "https://staging.ontimegov.com/",
+        image: "projects/ontime.png",
+        projectDetail: "Developed a comprehensive Dubai Government Services platform, similar to India's CSC, enabling residents and businesses to access visa, Emirates ID, labor, licensing, attestation, RTA, and other government services through a single digital platform. Built a responsive, high-performance user interface with a focus on accessibility, seamless navigation, and an optimized user experience.",
+        technologiesUsed: [
+            {
+                tech: "Next js"
+            },
+            {
+                tech: "CRM"
+            },
+             {
+                tech: "Design"
+            },
+            {
+                tech: "Smooth animations"
+            },
+             {
+                tech: "API's"
+            },
+            {
+                tech: "JWT"
+            },
+            
+           
+        ]
+    },
+      {
+    
+        projectName: " The Friday Academy",
+        url: "https://thefridayacademy.com",
+        image: "projects/fr.png",
+        projectDetail: "Developed a modern e-learning platform offering professional courses, live workshops, and mentorship programs to help learners build practical, industry-ready skills. Built responsive, performance-optimized interfaces with seamless navigation, interactive course pages, and an engaging user experience across all devices.",
+        technologiesUsed: [
+                  {
+                tech: "Wordpress"
+            },
+            {
+                tech: "Php"
+            },
+            {
+                tech: "Custom css"
+            },
+            {
+                tech: "MySql Db"
+            },
+
+            
+           
+        ]
+    },
     {
     
         projectName: "Eydit",
